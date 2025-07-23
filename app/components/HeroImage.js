@@ -72,7 +72,7 @@ export default function HeroImage() {
             <Image
               src="https://images.pexels.com/photos/3401403/pexels-photo-3401403.jpeg"
               alt="Gedung Ketiga"
-              width={380}
+              width={385}
               height={280}
               className="rounded-xl shadow-2xl"
             />

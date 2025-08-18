@@ -1,19 +1,21 @@
-import Image from "next/image";
 import Navbar from "./components/navbar";
 import HeroImage from "./components/HeroImage";
 import ProfileGrid from "./components/ProfileGrid";
-import MagicNavigation from "./components/MagicNavbar";
-import MenuSection from "./components/ContentButtonMenu";
+import Facilities from "./components/Facilities";
+import Services from "./components/Services";
 import SectionFakultas from "./components/SectionFaculity";
+import Footer from "./components/footer";
 
 export default function Home() {
-  return (
-    <>
-      <MagicNavigation></MagicNavigation>
-      <HeroImage></HeroImage>
-      <MenuSection></MenuSection>
-      <ProfileGrid></ProfileGrid>
-      <SectionFakultas></SectionFakultas>
-    </>
-  );
+	return (
+		<>
+			<Navbar></Navbar>
+			<HeroImage></HeroImage>
+			<Services></Services>
+			{/* <ProfileGrid></ProfileGrid> */}
+			<Facilities></Facilities>
+			<SectionFakultas></SectionFakultas>
+			<Footer></Footer>
+		</>
+	);
 }

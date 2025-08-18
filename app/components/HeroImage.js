@@ -13,7 +13,7 @@ const slides = [
   },
   {
     src: "https://images.pexels.com/photos/1326947/pexels-photo-1326947.jpeg",
-    title: "Kampus Hijau UNMA",
+    title: "Kampus Hijau UCIC",
     desc: "Lingkungan Nyaman untuk Belajar dan Berkembang",
   },
   {

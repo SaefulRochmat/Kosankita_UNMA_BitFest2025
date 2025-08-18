@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function ProfileGrid() {
   return (
-    <section className="bg-white py-16 px-6 md:px-16 overflow-hidden">
+    <section className="bg-white shadow-lg py-16 px-6 md:px-16 overflow-hidden">
       <div className="max-w-7xl mx-auto mb-5 flex flex-col md:flex-row items-center gap-12 relative">
         
         {/* Wrapper Gambar */}
@@ -33,7 +33,7 @@ export default function ProfileGrid() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="absolute -bottom-16 text-center w-full text-xl sm:text-2xl md:text-3xl font-extrabold text-blue-900"
+            className="absolute -bottom-18  text-center w-full text-xl sm:text-2xl md:text-3xl font-extrabold text-blue-900"
           >
             Assoc. Prof. Dr.{" "}
             <motion.span

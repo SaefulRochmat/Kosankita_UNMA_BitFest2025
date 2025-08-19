@@ -13,31 +13,41 @@ export default function SectionFakultas() {
         { name: 'Teknik Informatika (S1)', link: '/prodi/teknik-informatika' },
         { name: 'Sistem Informasi (S1)', link: '/prodi/sistem-informasi' },
         { name: 'Desain Komunikasi Visual (S1)', link: '/prodi/desain-komunikasi-visual' },
-        { name: 'Manajemen Informatika (D3)', link: '/prodi/manajemen-informatika' }
+        { name: 'Manajemen Informatika (D3)', link: '/prodi/manajemen-informatika' },
+        { name: 'Komputerisasi Akuntansi (D3)', link: '/prodi/komputerisasi-akuntansi' }
       ]
     },
-    FEBE: {
+    FEB: {
       title: 'Fakultas Ekonomi & Bisnis',
       programs: [
         { name: 'Manajemen (S1)', link: '/prodi/manajemen' },
         { name: 'Akuntansi (S1)', link: '/prodi/akuntansi' },
-        { name: 'Ekonomi Pembangunan (S1)', link: '/prodi/ekonomi-pembangunan' },
-        { name: 'Kewirausahaan (S1)', link: '/prodi/kewirausahaan' }
+        { name: 'Manajemen Bisnis (D3)', link: '/prodi/manajemen-bisnis' }
       ]
     }
   };
 
-  const tabs = ['FTI', 'FEBE'];
+  const tabs = ['FTI', 'FEB'];
 
   return (
-    <div className="w-full bg-white py-12 px-4 mt-3">
-      <div className="max-w-6xl mx-auto">
+    <div className="w-full bg-gradient-to-br from-yellow-50 via-orange-50 to-amber-100 py-20 px-4 relative overflow-hidden" id="fakultas">
+      {/* Background Decorations */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 right-16 w-80 h-80 bg-orange-200/25 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-16 left-20 w-72 h-72 bg-amber-300/30 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-yellow-200/35 rounded-full blur-2xl"></div>
+        <div className="absolute top-32 left-1/4 w-56 h-56 bg-orange-300/20 rounded-full blur-xl"></div>
+      </div>
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Main Title */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             <span className="text-blue-800">Fakultas & Program Studi</span>
           </h1>
-          <div className="w-36 h-1 bg-yellow-500 mx-auto rounded-full"></div>
+          <div className="w-36 h-1 bg-yellow-500 mx-auto rounded-full mb-6"></div>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Pilihan program studi unggulan dengan kurikulum berbasis industri dan teknologi terkini untuk mempersiapkan lulusan yang kompeten dan siap bersaing
+          </p>
         </div>
 
         {/* Navigation Tabs */}

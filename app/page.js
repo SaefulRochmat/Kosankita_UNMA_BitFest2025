@@ -1,21 +1,23 @@
 import Navbar from "./components/navbar";
 import HeroImage from "./components/HeroImage";
-import ProfileGrid from "./components/ProfileGrid";
-import Facilities from "./components/Facilities";
+import AboutSection from "./components/AboutSection";
 import Services from "./components/Services";
+import Facilities from "./components/Facilities";
 import SectionFakultas from "./components/SectionFaculity";
+import TestimonialSection from "./components/TestimonialSection";
 import Footer from "./components/footer";
 
 export default function Home() {
 	return (
 		<>
-			<Navbar></Navbar>
-			<HeroImage></HeroImage>
-			<Services></Services>
-			{/* <ProfileGrid></ProfileGrid> */}
-			<Facilities></Facilities>
-			<SectionFakultas></SectionFakultas>
-			<Footer></Footer>
+			<Navbar />
+			<HeroImage />
+			<AboutSection />
+			<Services />
+			<Facilities />
+			<SectionFakultas />
+			<TestimonialSection />
+			<Footer />
 		</>
 	);
 }

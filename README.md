@@ -3,6 +3,14 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+## Tutorial Menjalankan Project
+```bash
+git clone https://github.com/SaefulRochmat/Kosankita_UNMA_BitFest2025.git
+cd Kosankita_UNMA_BitFest2025
+npm i
+npm run dev
+```
+
 First, run the development server:
 
 ```bash
@@ -38,3 +46,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 =======
 # Project-Landing-Page
 >>>>>>> 988eae363593893658f9dbebed7c945dc69883fd
+# Screenshot Preview
+## Tampilan Desktop
+<img width="1920" height="911" alt="Screenshot 2025-08-19 142051" src="https://github.com/user-attachments/assets/54b559a7-935f-41f9-b835-7d0dc853d85b" />
+
+## Tampilan Mobile
+<img width="1920" height="911" alt="Screenshot 2025-08-19 143138" src="https://github.com/user-attachments/assets/d85dcc6c-1dad-4b1e-8b0d-93c71485a5e2" />
+

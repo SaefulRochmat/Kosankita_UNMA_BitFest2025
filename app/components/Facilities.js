@@ -8,42 +8,65 @@ const facilities = [
 		image: "aula.png",
 		name: "Aula UCIC",
 		desc: "Gedung perkuliahan modern dengan kapasitas 500 orang, dilengkapi teknologi audio-visual terdepan untuk mendukung pembelajaran interaktif.",
-		features: ["Kapasitas 500 orang", "Audio-Visual HD", "AC Central", "WiFi Kencang"],
-		category: "Akademik"
+		features: [
+			"Kapasitas 500 orang",
+			"Audio-Visual HD",
+			"AC Central",
+			"WiFi Kencang",
+		],
+		category: "Akademik",
 	},
 	{
 		image: "audit.jpeg",
 		name: "Auditorium Cendekia",
 		desc: "Auditorium berstandar internasional dengan akustik sempurna untuk seminar, konferensi, dan pertunjukan seni.",
-		features: ["Akustik Premium", "Lighting System", "Recording Studio", "Live Streaming"],
-		category: "Event"
+		features: [
+			"Akustik Premium",
+			"Lighting System",
+			"Recording Studio",
+			"Live Streaming",
+		],
+		category: "Event",
 	},
 	{
 		image: "perpustakaan.jpeg",
 		name: "Perpustakaan Digital",
 		desc: "Pusat pembelajaran modern dengan koleksi digital terlengkap dan ruang belajar yang nyaman untuk mahasiswa.",
-		features: ["100K+ Buku Digital", "Jurnal Internasional", "Ruang Diskusi", "24/7 Access"],
-		category: "Pembelajaran"
+		features: [
+			"100K+ Buku Digital",
+			"Jurnal Internasional",
+			"Ruang Diskusi",
+			"24/7 Access",
+		],
+		category: "Pembelajaran",
 	},
 	{
 		image: "rrapat.jpeg",
 		name: "Ruang Konferensi",
 		desc: "Fasilitas meeting room profesional dengan teknologi video conference untuk mendukung kegiatan akademik dan bisnis.",
-		features: ["Video Conference", "Smart Board", "Hybrid Meeting", "High-Speed Internet"],
-		category: "Meeting"
+		features: [
+			"Video Conference",
+			"Smart Board",
+			"Hybrid Meeting",
+			"High-Speed Internet",
+		],
+		category: "Meeting",
 	},
 ];
 
 const categoryColors = {
-	"Akademik": "bg-blue-500",
-	"Event": "bg-purple-500", 
-	"Pembelajaran": "bg-green-500",
-	"Meeting": "bg-orange-500"
+	Akademik: "bg-blue-500",
+	Event: "bg-purple-500",
+	Pembelajaran: "bg-green-500",
+	Meeting: "bg-orange-500",
 };
 
 export default function Facilities() {
 	return (
-		<section className="w-full py-20 bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-100 relative overflow-hidden" id="facilities">
+		<section
+			className="w-full py-20 bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-100 relative overflow-hidden"
+			id="facilities"
+		>
 			{/* Background Decorations */}
 			<div className="absolute inset-0">
 				<div className="absolute top-16 left-20 w-88 h-88 bg-orange-200/25 rounded-full blur-3xl"></div>
@@ -68,7 +91,8 @@ export default function Facilities() {
 					</h2>
 					<div className="w-32 h-2 bg-gradient-to-r from-yellow-400 to-yellow-500 mx-auto rounded-full mb-6"></div>
 					<p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-						Nikmati fasilitas berkelas dunia yang mendukung proses pembelajaran dan pengembangan diri mahasiswa
+						Nikmati fasilitas berkelas dunia yang mendukung proses pembelajaran
+						dan pengembangan diri mahasiswa
 					</p>
 				</motion.div>
 
@@ -86,22 +110,26 @@ export default function Facilities() {
 							}`}
 						>
 							{/* Image Section */}
-							<div className="relative lg:w-1/2 h-64 lg:h-96 overflow-hidden">
+							<div className="relative lg:w-1/2 lg:h-auto h-64 md:h-96 overflow-hidden flex items-stretch">
 								<Image
 									src={`/Image/${facility.image}`}
 									alt={facility.name}
 									fill
-									className="object-cover object-center transition-transform duration-700 group-hover:scale-110"
+									className="object-cover object-center w-full h-full min-h-full max-h-full transition-transform duration-700 group-hover:scale-110"
 									sizes="(max-width: 1024px) 100vw, 50vw"
 									priority={idx === 0}
 								/>
-								
+
 								{/* Overlay gradient */}
 								<div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent group-hover:from-black/30 transition-all duration-500"></div>
-								
+
 								{/* Category badge */}
 								<div className="absolute top-6 left-6">
-									<span className={`${categoryColors[facility.category]} text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg`}>
+									<span
+										className={`${
+											categoryColors[facility.category]
+										} text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg`}
+									>
 										{facility.category}
 									</span>
 								</div>
@@ -123,7 +151,7 @@ export default function Facilities() {
 									<h3 className="text-3xl lg:text-4xl font-bold text-blue-800 mb-4 group-hover:text-blue-900 transition-colors duration-300">
 										{facility.name}
 									</h3>
-									
+
 									{/* Description */}
 									<p className="text-gray-600 text-lg leading-relaxed mb-6">
 										{facility.desc}
@@ -136,7 +164,10 @@ export default function Facilities() {
 												key={featureIdx}
 												initial={{ opacity: 0, scale: 0.8 }}
 												whileInView={{ opacity: 1, scale: 1 }}
-												transition={{ duration: 0.3, delay: 0.3 + featureIdx * 0.1 }}
+												transition={{
+													duration: 0.3,
+													delay: 0.3 + featureIdx * 0.1,
+												}}
 												viewport={{ once: true }}
 												className="flex items-center gap-2 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-3 hover:from-blue-100 hover:to-blue-200 transition-all duration-300"
 											>

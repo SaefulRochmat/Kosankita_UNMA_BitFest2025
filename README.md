@@ -1,4 +1,5 @@
-# Tutorial Menjalankan Project Next.js dari GitHub
+# Ini Adalah Project Website Landing Page Universitas CIC
+## Tutorial Menjalankan Project Next.js dari GitHub
 ## 1. Persiapan Awal
 
 ### Pastikan sudah menginstal:

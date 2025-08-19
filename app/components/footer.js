@@ -51,11 +51,11 @@ export default function Footer() {
 							<div className="flex items-center gap-3 mb-6">
 								<div className="relative">
 									<Image
-										src="/Image/logo.png"
+										src="/Image/logo_title.png"
 										alt="Logo UCIC"
 										width={80}
 										height={80}
-										className="rounded-xl bg-white/90 p-2 shadow-lg"
+										className="rounded-xl p-2 shadow-lg"
 									/>
 									<div className="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-blue-400/20 rounded-xl blur-sm"></div>
 								</div>
